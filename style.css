@@ -1,41 +1,45 @@
 html, body {
-    height: 100%;
+  height: 100%;
 }
 body {
     margin: 0;
 }
 .flex-container {
     height: 100%;
-    padding: 0;
-    margin: 0;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 .col {
-    margin-bottom: 25px;
-    align-self: center;
+    margin-bottom: 30px;
 }
 .text_area {
+    width: 100%;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
     resize: none;
+    margin: 0;
+    padding: 0;
     border: none;
-    outline: inherit;
+    outline: none;
 }
 .col_btn {
   font-weight: bold;
   font-size: 1.5em;
   cursor: pointer;
-  border: 1px solid black;
-  padding: 20px;
+  padding: 20px 27px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
 }
-.col_btn:hover {
-  background-color: #ffcccc;
+.col_btn:active {
+  -webkit-box-shadow: inset 10px 10px 20px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 10px 10px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: inset 10px 10px 20px 0px rgba(0,0,0,0.5);
 }
