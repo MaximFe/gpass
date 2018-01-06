@@ -12,13 +12,16 @@ var pass = document.getElementById('text');
 var next = document.getElementById('next');
 
 function handler() {
-  var passList = [];
-  for (var i = 0; i < 12; i++) {
-    var num = Math.floor(Math.random() * symbols.length);
-    passList.push(symbols[num]);
-  }
+  do {
+    var passList = [];
+    for (var i = 0; i < 12; i++) {
+      var num = Math.floor(Math.random() * symbols.length);
+      passList.push(symbols[num]);
+    }
 
-  var password = passList.join('');
+    var password = passList.join('');
+  } while (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/.test(password) != true);
+
   pass.textContent = password;
 };
 
