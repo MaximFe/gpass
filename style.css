@@ -2,6 +2,10 @@
   header {
     margin-bottom: 80px;
   }
+  .title {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
   .text-area-container {
     margin-bottom: 80px;
   }
@@ -19,6 +23,12 @@
   header {
     margin-bottom: 30px;
   }
+  .title {
+    font-size: 1.5em;
+    font-weight: normal;
+    -webkit-margin-before: 0.33em;
+    -webkit-margin-after: 0.33em;
+  }
   .text-area-container {
     margin-bottom: 10px;
   }
@@ -33,6 +43,10 @@
 @media screen and (min-width: 650px) {
   header {
     margin-bottom: 100px;
+  }
+  .title {
+    font-size: 1.5em;
+    font-weight: normal;
   }
   .text-area-container {
     margin-bottom: 100px;
@@ -57,10 +71,6 @@ header {
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-}
-.title {
-  font-size: 1.5em;
-  font-weight: normal;
 }
 .text_area {
   width: 100%;
