@@ -17,10 +17,10 @@
 }
 @media (max-height: 360px) and (orientation: landscape) {
   header {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .text-area-container {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   .flex-buttons {
     display: flex;
