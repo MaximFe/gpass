@@ -1,12 +1,59 @@
+@media (orientation: portrait) and (max-width: 649px) {
+  header {
+    margin-bottom: 80px;
+  }
+  .text-area-container {
+    margin-bottom: 80px;
+  }
+  .flex-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .col_btn {
+    margin-bottom: 20px;
+  }
+}
+@media (max-height: 360px) and (orientation: landscape) {
+  header {
+    margin-bottom: 50px;
+  }
+  .text-area-container {
+    margin-bottom: 50px;
+  }
+  .flex-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .col_btn:nth-child(2) {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 650px) {
+  header {
+    margin-bottom: 100px;
+  }
+  .text-area-container {
+    margin-bottom: 100px;
+  }
+  .flex-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .col_btn:nth-child(2) {
+    margin-left: 40px;
+  }
+}
 html, body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Cutive Mono', monospace;
 }
 header {
-  padding: 10px;
+  padding: 10px 20px;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
@@ -15,34 +62,21 @@ header {
   font-size: 1.5em;
   font-weight: normal;
 }
-.flex-container {
-    height: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.col {
-    margin-bottom: 30px;
-}
 .text_area {
-    width: 100%;
-    font-size: 3em;
-    text-align: center;
-    resize: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 2.5em;
+  text-align: center;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 .col_btn {
   font-size: 1.5em;
   cursor: pointer;
-  padding: 20px 29px;
+  padding: 32px 15px;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
