@@ -19,7 +19,7 @@
     margin-bottom: 20px;
   }
 }
-@media (max-height: 360px) and (orientation: landscape) {
+@media (max-height: 500px) and (orientation: landscape) {
   header {
     margin-bottom: 30px;
   }
