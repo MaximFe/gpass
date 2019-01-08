@@ -8,13 +8,13 @@ var symbols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
   '*', '+', ',', '-', '.', '/', ':', ';', '<', '=',
   '>', '?', '@', '[', '\\', ']', '_', '{', '}', '~']
 
-var pass = document.getElementById('text');
-var next = document.getElementById('next');
+var secure = document.getElementById('secure');
+var ultra = document.getElementById('ultra');
 
-function handler() {
+function geniePass(numLength) {
   do {
     var passList = [];
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < numLength; i++) {
       var num = Math.floor(Math.random() * symbols.length);
       passList.push(symbols[num]);
     }
@@ -22,7 +22,7 @@ function handler() {
     var password = passList.join('');
   } while (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/.test(password) != true);
 
-  pass.textContent = password;
+  text.textContent = password;
 };
 
 function copyText() {
@@ -38,5 +38,10 @@ function copyText() {
   }
 };
 
-next.addEventListener("click", handler);
+secure.addEventListener("click", () => {
+  geniePass(8);
+});
+ultra.addEventListener("click", () => {
+  geniePass(12);
+});
 copy.addEventListener("click", copyText);
