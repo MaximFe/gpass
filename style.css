@@ -91,6 +91,9 @@ header {
   border: none;
   outline: none;
 }
+.copyLink {
+  text-align: center;
+}
 .col_btn {
   width: 100px;
   text-align: center;
