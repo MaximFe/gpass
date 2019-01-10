@@ -36,6 +36,9 @@
   .text-area-container {
     margin-bottom: 10px;
   }
+  .copyLink {
+    margin-bottom: 40px;
+  }
   .flex-buttons {
     display: flex;
     justify-content: center;
