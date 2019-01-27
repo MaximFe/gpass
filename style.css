@@ -112,3 +112,15 @@ header {
   -moz-box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.5);
   box-shadow: inset 5px 5px 10px 0px rgba(0,0,0,0.5);
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.link_decoration {
+  text-decoration: none;
+}
